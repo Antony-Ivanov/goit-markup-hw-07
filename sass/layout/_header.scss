@@ -1,0 +1,139 @@
+.header .conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.head-box {
+  display: flex;
+}
+
+.current.current {
+  color: var(--accent-color);
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+
+  & :not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-title);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms var(--speed-anim);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+.info-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--speed-anim);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  transition: color 250ms var(--speed-anim);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.head-list-item {
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.mail-ikon {
+  margin-right: 10px;
+  align-items: center;
+  fill: var(--color-text);
+  transition: fill 250ms var(--speed-anim);
+
+  .info-link:focus &,
+  .info-link:hover & {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.tel-ikon {
+  margin-right: 10px;
+  align-items: center;
+  fill: var(--color-text);
+  transition: fill 250ms var(--speed-anim);
+
+  .tel-link:hover &,
+  .tel-link:focus & {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
+}

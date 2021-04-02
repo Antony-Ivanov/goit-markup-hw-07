@@ -1,0 +1,47 @@
+.advantages-list {
+  display: flex;
+  margin-right: -30px;
+}
+
+.adv-box {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.adv-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.adv-item {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.adv-logo-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--qwerty-color);
+  margin-bottom: 30px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-title);
+  margin: 0;
+}
+
+.advantages-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+  margin-top: 10px;
+}
