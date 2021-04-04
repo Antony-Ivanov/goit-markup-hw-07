@@ -30,26 +30,23 @@
   }
 }
 
-.footer-social-list {
+.footer-social__list {
   display: flex;
   margin-top: 20px;
 }
 
-.footer-social-list-item {
+.footer-social__container {
   width: calc((100%-30px) / 4);
   margin-right: 10px;
+  margin-left: 70px;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
-.footer-social-icon {
+.footer-social__icon {
   width: 20px;
   height: 20px;
   fill: var(--white-color);
-}
-
-.footer-social-icon-box {
-  margin-left: 70px;
 }
