@@ -1,20 +1,20 @@
-.prod-list {
+.products__list {
   display: flex;
   margin-left: -30px;
   margin-top: 50px;
 }
 
-.prod-item {
+.products__item {
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.prod-box {
+.products__container {
   padding-top: 47px;
   padding-bottom: 94px;
 }
 
-.products-company-title {
+.products__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -23,11 +23,11 @@
   color: var(--color-title);
 }
 
-.overlay-prod-box {
+.overlay-products__container {
   position: relative;
 }
 
-.overlay-text-prod {
+.products-overlay__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -39,7 +39,7 @@
   text-align: center;
 }
 
-.overlay-text-prod-box {
+.overlay-text__container {
   position: absolute;
   left: 0;
   bottom: 0;
