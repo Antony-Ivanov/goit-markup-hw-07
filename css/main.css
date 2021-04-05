@@ -1,8 +1,13 @@
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 :root {
@@ -22,6 +27,13 @@
   --hero-bgrnd-color: #c4c4c4;
   --logo-fill: #afb1b8;
   --speed-anim: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 a {
@@ -63,18 +75,6 @@ img {
 
 .address {
   font-style: normal;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
 }
 
 .logo {
@@ -875,6 +875,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  transition: border-color 250ms var(--speed-anim);
 }
 
 .modal-form__input:focus {
@@ -913,6 +914,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form__massage:focus {
@@ -930,7 +932,7 @@ img {
 
 .modal-form__desc {
   display: flex;
-  font-size: 12px;
+  font-size: 14px;
   align-items: center;
   margin-top: 20px;
 }
