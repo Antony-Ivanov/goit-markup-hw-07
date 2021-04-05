@@ -559,7 +559,7 @@ img {
 }
 
 .form-wrapper {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-madal__title {
@@ -828,6 +828,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.close__button:hover, .close__button:focus {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
