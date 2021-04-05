@@ -714,7 +714,7 @@ img {
   padding-bottom: 94px;
 }
 
-.prod-item-box {
+.cards-title__container {
   padding: 20px 24px;
   background: var(--primary-background-color);
   border-right: 1px solid #eeeeee;
@@ -735,7 +735,7 @@ img {
   margin-top: -30px;
 }
 
-.product-title {
+.cards__title {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
@@ -760,16 +760,7 @@ img {
   overflow: hidden;
 }
 
-.gallery-gallery-cards__:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.gallery-cards__link:hover .overlay-text,
-.gallery-cards__link:focus .overlay-text {
-  transform: translateY(0%);
-}
-
-.overlay-text {
+.overlay__text {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
@@ -785,6 +776,15 @@ img {
   overflow-y: scroll;
   transform: translateY(100%);
   transition: transform 250ms var(--speed-anim);
+}
+
+.gallery-cards__link:hover .overlay__text,
+.gallery-cards__link:focus .overlay__text {
+  transform: translateY(0%);
+}
+
+.gallery-cards__link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .backdrop {
