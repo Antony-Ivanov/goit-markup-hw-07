@@ -383,8 +383,8 @@ img {
   transition: fill 250ms var(--speed-anim);
 }
 
-.social-list-link:hover .social-list__icon,
-.social-list-link:focus .social-list__icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
   fill: var(--white-color);
 }
 
@@ -669,16 +669,11 @@ img {
   color: var(--white-color);
 }
 
-.prod-filter-box {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .header-portf {
   border-bottom: 1px solid #eeeeee;
 }
 
-.btn-btn {
+.gallery-filter__btn {
   background-color: var(--qwerty-color);
   cursor: pointer;
   font-family: var(--main-font);
@@ -697,21 +692,26 @@ img {
   transition: background-color 250ms var(--speed-anim), color 250ms var(--speed-anim), box-shadow 250ms var(--speed-anim);
 }
 
-.btn-btn:hover, .btn-btn:focus {
+.gallery-filter__btn:hover, .gallery-filter__btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.filter-list {
+.gallery-filter__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.gallery-filter__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.gallery-cards__container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .prod-item-box {
@@ -722,13 +722,13 @@ img {
   border-left: 1px solid #eeeeee;
 }
 
-.product-item {
+.gallery-cards__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.product-list {
+.gallery-cards__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -755,17 +755,17 @@ img {
   margin-top: 4px;
 }
 
-.overlay-box {
+.overlay__container {
   position: relative;
   overflow: hidden;
 }
 
-.product-link:hover {
+.gallery-gallery-cards__:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.product-link:hover .overlay-text,
-.product-link:focus .overlay-text {
+.gallery-cards__link:hover .overlay-text,
+.gallery-cards__link:focus .overlay-text {
   transform: translateY(0%);
 }
 

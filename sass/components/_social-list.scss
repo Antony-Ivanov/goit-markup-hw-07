@@ -9,8 +9,8 @@
   height: 20px;
   fill: var(--logo-fill);
   transition: fill 250ms var(--speed-anim);
-  .social-list-link:hover &,
-  .social-list-link:focus & {
+  .social-list__link:hover &,
+  .social-list__link:focus & {
     fill: var(--white-color);
   }
 }

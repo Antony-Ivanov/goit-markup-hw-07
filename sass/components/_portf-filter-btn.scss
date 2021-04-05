@@ -1,4 +1,4 @@
-.btn-btn {
+.gallery-filter__btn {
   background-color: var(--qwerty-color);
   cursor: pointer;
   font-family: var(--main-font);
@@ -28,13 +28,12 @@
   }
 }
 
-
-.filter-list {
+.gallery-filter__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.gallery-filter__item:not(:last-child) {
   margin-right: 8px;
 }
